@@ -1,0 +1,14 @@
+# UKBBcervix
+CC GWAS Pheno
+
+> random2 <- pheno[sample(nrow(pheno),20000),]
+
+
+> random3 <- pheno %>% sample_n(20000)
+
+
+> random3 <- if(pheno$CIN==0) { pheno %>% sample_n(20000)}
+
+> write.table(random3, "pheno20000cont.txt")
+
+> cases <- pheno[ which (pheno$CIN==1), ]
