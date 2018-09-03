@@ -6,6 +6,7 @@ CC GWAS Pheno
 
 > random3 <- pheno %>% sample_n(20000)
 
+>randomsample <- pheno[sample(1:nrow(pheno), 20000, replace=FALSE),]
 
 > random3 <- if(pheno$CIN==0) { pheno %>% sample_n(20000)}
 
