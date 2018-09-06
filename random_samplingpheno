@@ -1,6 +1,8 @@
 # UKBBcervix
 CC GWAS Pheno
 
+
+#experimenting 
 > random2 <- pheno[sample(nrow(pheno),20000),]
 
 
@@ -12,4 +14,14 @@ CC GWAS Pheno
 
 > write.table(random3, "pheno20000cont.txt")
 
+
+#to create cases
 > cases <- pheno[ which (pheno$CIN==1), ]
+
+#to create controls sample file
+ random <- fullpheno2[ sample( which( fullpheno2$CIN ==0), 20000) , ]
+ 
+#bind files 
+ finalpheno <- rbind(cases, random)
+ 
+ write.table(finalpheno, "random2Xpheno.txt")
