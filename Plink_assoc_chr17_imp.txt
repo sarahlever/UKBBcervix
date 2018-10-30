@@ -1,0 +1,5 @@
+plink --assoc --bed /groupvol/med-bio/uk-biobank-2017/release_12032018/converted_data/imp_bgen1.1_plink/ukb_imp_chr17_v3.bed \
+--bim /groupvol/med-bio/uk-biobank-2017/release_12032018/converted_data/imp_bgen1.1_plink/ukb_imp_chr17_v3.bim \
+--fam /groupvol/med-bio/ccuk-biobank/FAMimp.fam \
+
+

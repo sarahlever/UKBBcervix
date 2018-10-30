@@ -1,0 +1,5 @@
+module load plink
+plink
+plink --bed /groupvol/med-bio/uk-biobank-2017/release_latest/converted_data/imp_bgen1.1_plink/ukb_imp_chr21_v3.bed --bim /groupvol/med-bio/uk-biobank-2017/release_latest/converted_data/imp_bgen1.1_plink/ukb_imp_chr21_v3.bim --fam ukb_chr17_plink.fam --assoc --out plinkGWAS2
+
+

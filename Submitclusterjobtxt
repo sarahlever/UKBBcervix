@@ -1,0 +1,7 @@
+# submit a job to the cluster
+
+ qsub -q med-bio myscript.sh
+ 
+ qstat 2086490.cx1
+ 
+ 

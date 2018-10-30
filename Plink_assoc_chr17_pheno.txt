@@ -1,0 +1,5 @@
+plink --assoc --bed /groupvol/med-bio/uk-biobank-2017/release_12032018/original_data/ukb_cal_chr17_v2.bed \
+--bim /groupvol/med-bio/uk-biobank-2017/release_12032018/original_data/ukb_snp_chr17_v2.bim \
+--fam /groupvol/med-bio/ccuk-biobank/ukb21146_cal_chr17_v2_s488363.fam \
+--pheno /groupvol/med-bio/ccuk-biobank/logisticmodel/plink_pheno2.txt
+

@@ -1,0 +1,13 @@
+
+#!/bin/bash
+#PBS -l walltime=24:00:00
+#PBS  -l select=1:ncpus=12:mem=9600mb
+
+module load plink
+plink --bed /groupvol/med-bio/uk-biobank-2017/release_latest/converted_data/imp$
+
+
+
+
+
+

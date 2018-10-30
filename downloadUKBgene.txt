@@ -1,0 +1,3 @@
+./ukbgene imp -c5 -m
+./ukbgene cal -c5 -m
+./ukbgene imp -c5

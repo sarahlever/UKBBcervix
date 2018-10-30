@@ -1,0 +1,14 @@
+#!/bin/bash
+# -N cervix
+#PBS -l walltime=24:00:00
+#PBS  -l select=1:ncpus=12:mem=9600mb
+
+module load plink
+
+
+#qctool
+
+qctool -g /groupvol/med-bio/uk-biobank-2017/release_12032018/original_data/ukb_imp_chr17_v3.bgen -og /groupvol/med-bio/ccuk-biobank/logisticmodel/chr17.bgen -s /groupvol/med-bio/ccuk-biobank/ukb21146_imp_chr17_v3_s487395.sample
+
+
+qctool 

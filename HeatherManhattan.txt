@@ -1,0 +1,28 @@
+#Heather manhatten
+
+png("UKB_cervical_assoc.png")
+manhattan(res1, pch=20, suggestiveline=F, genomewideline=F, ymin=2, cex.x.axis=0.65, colors=c("black","dodgerblue"), cex=0.5)
+
+#EEPE manhatten
+png("basic-association.png")
+plot(data$BP,-log10(data$P),ylim=c(0,15))
+abline(h=-log10(5e-8), col="darkred")
+dev.off()
+
+logp<- -log10((data[,15]))
+snpdat[order(logp, decreasing=TRUE) [20], 15]
+
+topsnps <- data[logp < 0.000000005]
+
+
+#this worked
+topsnps <- subset(snpdat, P_BOLT_LMM_INF <= 0.00000005, select=ID:P_BOLT_LMM_INF)
+
+#prints in order
+snpdat[order(snpdat$P_BOLT_LMM_INF),]
+
+
+topsnps <- subset(data, P <= 0.00000005, select=CHR:P)
+
+#save dataframe.
+write.csv(topsnpschr17, file="/groupvol/med-bio/ccuk-biobank/logisticmodel/results/UKBB_chr17_topsnps.csv", row.names=F)

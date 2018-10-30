@@ -1,0 +1,1 @@
+plink --bfile /groupvol/med-bio/uk-biobank-2017/release_12032018/original_data/ukb_cal_chr17_v2.bed --chr 17 --from-kb 5000 --to-kb 6000
